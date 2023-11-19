@@ -6,7 +6,7 @@ import Logs from './collections/Logs'
 
 type PluginType = (pluginOptions: PluginTypes) => Plugin
 
-export const samplePlugin =
+export const pluginTrafficLogger =
   (pluginOptions: PluginTypes): Plugin =>
     (incomingConfig: Config) => {
       const newConfig = { ...incomingConfig }
